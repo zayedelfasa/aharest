@@ -1,70 +1,82 @@
-###################
-What is CodeIgniter
-###################
+###############################
+REST CONTROLLER FOR CODEIGNITER
+###############################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Rest Controller adalah sebuah controller yang ada pada codeigniter
+dengan tujuan untuk mengolah data yang dijadikan sebagai webservice.
+Output dari Rest Controller ini adalah Restfull dengan format JSON.
+Repository ini sengaja dibuat dengan tujuan untuk pembelajaran cara membuat Restfull API 
+karena tutorial sebelumnya terdapat trouble ketika codeigniter yang baru dipasang REST_Controller 
+dari pemiliknya.
 
-*******************
-Release Information
-*******************
-
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
-
-**************************
-Changelog and New Features
-**************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
-
-*******************
-Server Requirements
-*******************
-
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community IRC <https://webchat.freenode.net/?channels=%23codeigniter>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+********************
+Requirement Software
+********************
+- XAMPP <https://www.apachefriends.org/download.html>`_
+- PHP 5.+`_
+- CodeIgniter 3.+ <https://www.codeigniter.com/download>`_
+- Curl <https://curl.haxx.se/download.html>`_
 
 ***************
-Acknowledgement
+Cara Pengerjaan
 ***************
+1. Persiapkan CodeIgniter di dalam folder htdocs `_
+2. Kemudian ambil file rest.php (https://github.com/zayedelfasa/aharest/blob/master/application/config/rest.php) 
+kemudian masukkan ke dalam folder /application/config/rest.php di project CodeIgniter Anda.`_
+3. Setelah itu ambil file Format.php dan REST_Controller.php pada https://github.com/zayedelfasa/aharest/tree/master/application/libraries 
+kemudian masukkan ke dalam folder /application/libraries/ di project CodeIgniter Anda. `_
+4. Ambil file rest_controller_lang.php pada https://github.com/zayedelfasa/aharest/blob/master/application/language/english/rest_controller_lang.php 
+kemudian masukkan ke dalam folder /application/language/english/ `_
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+******************
+PERSIAPAN DATABASE
+******************
+	CREATE DATABASE kontak;
+	USE kontak;
+	CREATE TABLE IF NOT EXISTS `telepon` (
+	  `id` int(11) NOT NULL AUTO_INCREMENT,
+	  `nama` varchar(50) NOT NULL,
+	  `nomor` varchar(13) NOT NULL,
+	  PRIMARY KEY (`id`)
+	) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+	USE kontak;
+	INSERT INTO `telepon` (`id`, `nama`, `nomor`) VALUES
+	(1, 'Orion', '08576666762'),
+	(2, 'Mars', '08576666770'),
+	(7, 'Alpha', '08576666765');
+	
+********
+PHP CODE
+********
+Untuk mencoba silahkan konfigurasi database pada proyek Anda di folder /application/config/database.php dengan konfigurasi sebagai berikut : 
+
+	$db['default'] = array(
+		'dsn'	=> '',
+		'hostname' => 'localhost',
+		'username' => 'root',
+		'password' => '',
+		'database' => 'kontak',
+		'dbdriver' => 'mysqli',
+		'dbprefix' => '',
+		'pconnect' => FALSE,
+		'db_debug' => (ENVIRONMENT !== 'production'),
+		'cache_on' => FALSE,
+		'cachedir' => '',
+		'char_set' => 'utf8',
+		'dbcollat' => 'utf8_general_ci',
+		'swap_pre' => '',
+		'encrypt' => FALSE,
+		'compress' => FALSE,
+		'stricton' => FALSE,
+		'failover' => array(),
+		'save_queries' => TRUE
+	);
+	
+Setelah itu coba membuat controller kontak seperti pada file di bawah ini : 
+https://github.com/zayedelfasa/aharest/blob/master/application/controllers/kontakapi.php
+
+*********
+REFERENSI
+*********
+- Codepolitan <https://www.codepolitan.com/rest-api-server-sederhana-dengan-codeigniter-58901f324a29f> `_
+- CodeIgniter REST_SERVER <https://github.com/chriskacerguis/codeigniter-restserver> `_
