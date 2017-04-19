@@ -77,7 +77,7 @@ Cara menjalankan REST_Controller yang telah dibuat dapat menggunakan curl. Ada e
 	
 - DELETE digunakan untuk menghapus data. 
 	
-	`curl -X DELETE -d http://[domain.com]/index.php/kontakapi?id=3`
+	`curl -X DELETE http://[domain.com]/index.php/kontakapi?id=3`
 
 ## REFERENSI
 
