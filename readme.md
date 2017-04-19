@@ -13,7 +13,7 @@ Rest Controller adalah sebuah controller yang ada pada codeigniter dengan tujuan
 
 - Persiapkan CodeIgniter di dalam folder htdocs 
 - Kemudian ambil file [rest.php](https://github.com/zayedelfasa/aharest/blob/master/application/config/rest.php) kemudian masukkan ke dalam folder /application/config/rest.php di project CodeIgniter Anda.
-- Setelah itu ambil file Format.php dan REST_Controller.php pada https://github.com/zayedelfasa/aharest/tree/master/application/libraries kemudian masukkan ke dalam folder /application/libraries/ di project CodeIgniter Anda. 
+- Setelah itu ambil file [Format.php](https://github.com/zayedelfasa/aharest/tree/master/application/libraries/Format.php) dan [REST_Controller.php](https://github.com/zayedelfasa/aharest/tree/master/application/libraries/REST_Controller.php) kemudian masukkan ke dalam folder /application/libraries/ di project CodeIgniter Anda. 
 - Ambil file [rest_controller_lang.php](https://github.com/zayedelfasa/aharest/blob/master/application/language/english/rest_controller_lang.php) kemudian masukkan ke dalam folder /application/language/english/ 
 
 ## PERSIAPAN DATABASE
@@ -56,9 +56,9 @@ Untuk mencoba silahkan konfigurasi database pada proyek Anda di folder /applicat
     	'save_queries' => TRUE
     );
 	
-Setelah itu coba membuat controller kontak seperti pada file [kontakapi.php](https://github.com/zayedelfasa/aharest/blob/master/application/controllers/kontakapi.php) : 
+Setelah itu coba membuat controller kontak seperti pada file [kontakapi.php](https://github.com/zayedelfasa/aharest/blob/master/application/controllers/kontakapi.php)
 
 ## REFERENSI
 
 - [Codepolitan](https://www.codepolitan.com/rest-api-server-sederhana-dengan-codeigniter-58901f324a29f)
-- [CodeIgniter](REST_SERVER https://github.com/chriskacerguis/codeigniter-restserver)
+- [CodeIgniter REST_SERVER](https://github.com/chriskacerguis/codeigniter-restserver)
