@@ -20,12 +20,12 @@ Requirement Software
 ***************
 Cara Pengerjaan
 ***************
-1. Persiapkan CodeIgniter di dalam folder htdocs 
-2. Kemudian ambil file rest.php (https://github.com/zayedelfasa/aharest/blob/master/application/config/rest.php) 
+- Persiapkan CodeIgniter di dalam folder htdocs 
+- Kemudian ambil file rest.php (https://github.com/zayedelfasa/aharest/blob/master/application/config/rest.php) 
 kemudian masukkan ke dalam folder /application/config/rest.php di project CodeIgniter Anda.
-3. Setelah itu ambil file Format.php dan REST_Controller.php pada https://github.com/zayedelfasa/aharest/tree/master/application/libraries 
+- Setelah itu ambil file Format.php dan REST_Controller.php pada https://github.com/zayedelfasa/aharest/tree/master/application/libraries 
 kemudian masukkan ke dalam folder /application/libraries/ di project CodeIgniter Anda. 
-4. Ambil file rest_controller_lang.php pada https://github.com/zayedelfasa/aharest/blob/master/application/language/english/rest_controller_lang.php 
+- Ambil file rest_controller_lang.php pada https://github.com/zayedelfasa/aharest/blob/master/application/language/english/rest_controller_lang.php 
 kemudian masukkan ke dalam folder /application/language/english/ 
 
 ******************
