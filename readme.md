@@ -20,15 +20,15 @@ Rest Controller adalah sebuah controller yang ada pada codeigniter dengan tujuan
 
 - Buat Database Kontak pada database MySql    
 
-    create database kontak;
+    `create database kontak;`
 
 - Buat tabel kontak
 
-    create table if not exists `telepon` (`id` int(11) not null auto_increment ,`nama` varchar(50) not null,`nomor` varchar(13) not null, primary key (`id`)) engine=InnoDB  default charset=latin1 auto_increment=8;
+    `create table if not exists telepon (id int(11) not null auto_increment ,nama varchar(50) not null,nomor varchar(13) not null, primary key (id)) engine=InnoDB  default charset=latin1 auto_increment=8;`
 
 - Masukkan beberapa data kontak
 
-    insert into `telepon` (`id`, `nama`, `nomor`) values (1, 'Orion', '08576666762'),(2, 'Mars', '08576666770'),(7, 'Alpha', '08576666765');
+    `insert into telepon (id, nama, nomor) values (1, 'Orion', '08576666762'),(2, 'Mars', '08576666770'),(7, 'Alpha', '08576666765');`
 	
 ## KONFIGURASI DATABASE PADA CI
 
