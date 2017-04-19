@@ -64,25 +64,24 @@ Cara menjalankan REST_Controller yang telah dibuat dapat menggunakan curl. Ada e
 - GET
     GET digunakan untuk menyimpan ataupun menganmbil data.
     
-    curl http://[domain.com]/index.php/kontakapi
-    
-    Untuk mengambil salah satu id 
-    curl http://[domain.com]/index.php/kontakapi?id=1
+    `curl http://[domain.com]/index.php/kontakapi`
+	
+    `curl http://[domain.com]/index.php/kontakapi?id=1`
 	
 - POST
     POST digunakan untuk menyimpan data baru.
     
-    curl -X POST -d "id=3&nama=zayed elfasa&nomor=0812784958476" http://[domain.com]/index.php/kontakapi
+    `curl -X POST -d "id=3&nama=zayed elfasa&nomor=0812784958476" http://[domain.com]/index.php/kontakapi`
 	
 - PUT
     PUT digunakan untuk memperbarui data yang sudah ada sebelumnya
     
-    curl -X PUT -d "id=3&nama=arin&nomor=0812784958676" http://[domain.com]/index.php/kontakapi
+    `curl -X PUT -d "id=3&nama=arin&nomor=0812784958676" http://[domain.com]/index.php/kontakapi`
 	
 - DELETE
     DELETE digunakan untuk menghapus data. 
 	
-	curl -X DELETE -d http://[domain.com]/index.php/kontakapi?id=3
+	`curl -X DELETE -d http://[domain.com]/index.php/kontakapi?id=3`
 
 ## REFERENSI
 
