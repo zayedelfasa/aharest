@@ -9,10 +9,10 @@ dari pemiliknya.
 
 ## Requirement Software
 
-- XAMPP https://www.apachefriends.org/download.html
+- [XAMPP] (https://www.apachefriends.org/download.html)
 - PHP 5.+
-- CodeIgniter 3.+ https://www.codeigniter.com/download
-- Curl https://curl.haxx.se/download.html
+- [CodeIgniter 3.+] (https://www.codeigniter.com/download)
+- [Curl] (https://curl.haxx.se/download.html)
 
 ## Cara Pengerjaan
 
