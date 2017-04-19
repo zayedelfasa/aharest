@@ -21,56 +21,53 @@ Requirement Software
 Cara Pengerjaan
 ***************
 - Persiapkan CodeIgniter di dalam folder htdocs 
-- Kemudian ambil file rest.php (https://github.com/zayedelfasa/aharest/blob/master/application/config/rest.php) 
-kemudian masukkan ke dalam folder /application/config/rest.php di project CodeIgniter Anda.
-- Setelah itu ambil file Format.php dan REST_Controller.php pada https://github.com/zayedelfasa/aharest/tree/master/application/libraries 
-kemudian masukkan ke dalam folder /application/libraries/ di project CodeIgniter Anda. 
-- Ambil file rest_controller_lang.php pada https://github.com/zayedelfasa/aharest/blob/master/application/language/english/rest_controller_lang.php 
-kemudian masukkan ke dalam folder /application/language/english/ 
+- Kemudian ambil file rest.php (https://github.com/zayedelfasa/aharest/blob/master/application/config/rest.php) kemudian masukkan ke dalam folder /application/config/rest.php di project CodeIgniter Anda.
+- Setelah itu ambil file Format.php dan REST_Controller.php pada https://github.com/zayedelfasa/aharest/tree/master/application/libraries kemudian masukkan ke dalam folder /application/libraries/ di project CodeIgniter Anda. 
+- Ambil file rest_controller_lang.php pada https://github.com/zayedelfasa/aharest/blob/master/application/language/english/rest_controller_lang.php kemudian masukkan ke dalam folder /application/language/english/ 
 
 ******************
 PERSIAPAN DATABASE
 ******************
-	CREATE DATABASE kontak;
-	USE kontak;
-	CREATE TABLE IF NOT EXISTS `telepon` (
-	  `id` int(11) NOT NULL AUTO_INCREMENT,
-	  `nama` varchar(50) NOT NULL,
-	  `nomor` varchar(13) NOT NULL,
-	  PRIMARY KEY (`id`)
-	) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
-	USE kontak;
-	INSERT INTO `telepon` (`id`, `nama`, `nomor`) VALUES
-	(1, 'Orion', '08576666762'),
-	(2, 'Mars', '08576666770'),
-	(7, 'Alpha', '08576666765');
+    CREATE DATABASE kontak;
+    USE kontak;
+    CREATE TABLE IF NOT EXISTS `telepon` (
+      `id` int(11) NOT NULL AUTO_INCREMENT,
+      `nama` varchar(50) NOT NULL,
+      `nomor` varchar(13) NOT NULL,
+      PRIMARY KEY (`id`)
+    ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+    USE kontak;
+    INSERT INTO `telepon` (`id`, `nama`, `nomor`) VALUES
+    (1, 'Orion', '08576666762'),
+    (2, 'Mars', '08576666770'),
+    (7, 'Alpha', '08576666765');
 	
 ********
 PHP CODE
 ********
 Untuk mencoba silahkan konfigurasi database pada proyek Anda di folder /application/config/database.php dengan konfigurasi sebagai berikut : 
 
-	$db['default'] = array(
-		'dsn'	=> '',
-		'hostname' => 'localhost',
-		'username' => 'root',
-		'password' => '',
-		'database' => 'kontak',
-		'dbdriver' => 'mysqli',
-		'dbprefix' => '',
-		'pconnect' => FALSE,
-		'db_debug' => (ENVIRONMENT !== 'production'),
-		'cache_on' => FALSE,
-		'cachedir' => '',
-		'char_set' => 'utf8',
-		'dbcollat' => 'utf8_general_ci',
-		'swap_pre' => '',
-		'encrypt' => FALSE,
-		'compress' => FALSE,
-		'stricton' => FALSE,
-		'failover' => array(),
-		'save_queries' => TRUE
-	);
+    $db['default'] = array(
+    	'dsn'	=> '',
+    	'hostname' => 'localhost',
+    	'username' => 'root',
+    	'password' => '',
+    	'database' => 'kontak',
+    	'dbdriver' => 'mysqli',
+    	'dbprefix' => '',
+    	'pconnect' => FALSE,
+    	'db_debug' => (ENVIRONMENT !== 'production'),
+    	'cache_on' => FALSE,
+    	'cachedir' => '',
+    	'char_set' => 'utf8',
+    	'dbcollat' => 'utf8_general_ci',
+    	'swap_pre' => '',
+    	'encrypt' => FALSE,
+    	'compress' => FALSE,
+    	'stricton' => FALSE,
+    	'failover' => array(),
+    	'save_queries' => TRUE
+    );
 	
 Setelah itu coba membuat controller kontak seperti pada file di bawah ini : 
 https://github.com/zayedelfasa/aharest/blob/master/application/controllers/kontakapi.php
