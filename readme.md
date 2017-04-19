@@ -61,25 +61,21 @@ Setelah itu coba membuat controller kontak seperti pada file [kontakapi.php](htt
 ## TEST REST CONTROLLER
 Cara menjalankan REST_Controller yang telah dibuat dapat menggunakan curl. Ada empat metode yang digunakan untuk pengolahan data. Metode tersebut yaitu : 
 
-- GET
-    GET digunakan untuk menyimpan ataupun menganmbil data.
+- GET digunakan untuk menyimpan ataupun menganmbil data.
     
     `curl http://[domain.com]/index.php/kontakapi`
 	
     `curl http://[domain.com]/index.php/kontakapi?id=1`
 	
-- POST
-    POST digunakan untuk menyimpan data baru.
+- POST digunakan untuk menyimpan data baru.
     
     `curl -X POST -d "id=3&nama=zayed elfasa&nomor=0812784958476" http://[domain.com]/index.php/kontakapi`
 	
-- PUT
-    PUT digunakan untuk memperbarui data yang sudah ada sebelumnya
+- PUT digunakan untuk memperbarui data yang sudah ada sebelumnya
     
     `curl -X PUT -d "id=3&nama=arin&nomor=0812784958676" http://[domain.com]/index.php/kontakapi`
 	
-- DELETE
-    DELETE digunakan untuk menghapus data. 
+- DELETE digunakan untuk menghapus data. 
 	
 	`curl -X DELETE -d http://[domain.com]/index.php/kontakapi?id=3`
 
