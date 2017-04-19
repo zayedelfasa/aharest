@@ -12,21 +12,21 @@ dari pemiliknya.
 ********************
 Requirement Software
 ********************
-- XAMPP <https://www.apachefriends.org/download.html>`_
-- PHP 5.+`_
-- CodeIgniter 3.+ <https://www.codeigniter.com/download>`_
-- Curl <https://curl.haxx.se/download.html>`_
+- XAMPP https://www.apachefriends.org/download.html
+- PHP 5.+
+- CodeIgniter 3.+ https://www.codeigniter.com/download
+- Curl https://curl.haxx.se/download.html
 
 ***************
 Cara Pengerjaan
 ***************
-1. Persiapkan CodeIgniter di dalam folder htdocs `_
+1. Persiapkan CodeIgniter di dalam folder htdocs 
 2. Kemudian ambil file rest.php (https://github.com/zayedelfasa/aharest/blob/master/application/config/rest.php) 
-kemudian masukkan ke dalam folder /application/config/rest.php di project CodeIgniter Anda.`_
+kemudian masukkan ke dalam folder /application/config/rest.php di project CodeIgniter Anda.
 3. Setelah itu ambil file Format.php dan REST_Controller.php pada https://github.com/zayedelfasa/aharest/tree/master/application/libraries 
-kemudian masukkan ke dalam folder /application/libraries/ di project CodeIgniter Anda. `_
+kemudian masukkan ke dalam folder /application/libraries/ di project CodeIgniter Anda. 
 4. Ambil file rest_controller_lang.php pada https://github.com/zayedelfasa/aharest/blob/master/application/language/english/rest_controller_lang.php 
-kemudian masukkan ke dalam folder /application/language/english/ `_
+kemudian masukkan ke dalam folder /application/language/english/ 
 
 ******************
 PERSIAPAN DATABASE
@@ -78,5 +78,5 @@ https://github.com/zayedelfasa/aharest/blob/master/application/controllers/konta
 *********
 REFERENSI
 *********
-- Codepolitan <https://www.codepolitan.com/rest-api-server-sederhana-dengan-codeigniter-58901f324a29f> `_
-- CodeIgniter REST_SERVER <https://github.com/chriskacerguis/codeigniter-restserver> `_
+- Codepolitan https://www.codepolitan.com/rest-api-server-sederhana-dengan-codeigniter-58901f324a29f
+- CodeIgniter REST_SERVER https://github.com/chriskacerguis/codeigniter-restserver
