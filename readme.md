@@ -61,11 +61,11 @@ Setelah itu coba membuat controller kontak seperti pada file [kontakapi.php](htt
 ## TEST REST CONTROLLER
 Cara menjalankan REST_Controller yang telah dibuat dapat menggunakan curl. Ada empat metode yang digunakan untuk pengolahan data. Metode tersebut yaitu : 
 
-- GET digunakan untuk menyimpan ataupun menganmbil data.
+- GET digunakan untuk menyimpan ataupun mengambil data.
     
-    `curl http://[domain.com]/index.php/kontakapi`
+    `curl -X GET http://[domain.com]/index.php/kontakapi`
 	
-    `curl http://[domain.com]/index.php/kontakapi?id=1`
+    `curl -X GET http://[domain.com]/index.php/kontakapi?id=1`
 	
 - POST digunakan untuk menyimpan data baru.
     
